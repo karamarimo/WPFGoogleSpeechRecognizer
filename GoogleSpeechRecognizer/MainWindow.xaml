@@ -1,0 +1,17 @@
+﻿<Window x:Class="GoogleSpeechRecognizer.MainWindow"
+        x:Name="Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoogleSpeechRecognizer"
+        mc:Ignorable="d"
+        Title="Google Speech Recognizer" Height="179.018" Width="431.371" ResizeMode="CanMinimize">
+    <Grid>
+        <Button Content="Recognize" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="23" Click="Button_Click"/>
+        <TextBox x:Name="txtbox_filepath" Height="23" Margin="115,10,43,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="btn_openfile" Content="..." HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="28" Height="23" Click="Btn_openfile_Click"/>
+        <TextBox x:Name="txtbox_result" Margin="10,38,10,10" TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Auto"/>
+
+    </Grid>
+</Window>
